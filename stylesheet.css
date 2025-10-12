@@ -1,0 +1,17 @@
+.text-type {color:black; font-family:'Courier New', Courier, monospace;}
+
+p {color:black; font-family:'Courier New', Courier, monospace;}
+
+body {
+    background: url('https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/IMG_5916.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-y: auto;}
+
+.Content {
+    background-color: rgba(240, 240, 237, 0.75);
+    padding-top: 10px;
+    padding-bottom: 10px;}
