@@ -1,6 +1,21 @@
-.text-type {color:black; font-family:'Courier New', Courier, monospace;}
+.title-font {
+    color:black; 
+    font-family:"BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    }
 
-p {color:black; font-family:'Courier New', Courier, monospace;}
+.nav-font {
+    color:black; 
+    font-family:"BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.text-type {
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+}
 
 body {
     background: url('https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/IMG_5916.jpg');
@@ -15,3 +30,7 @@ body {
     background-color: rgba(240, 240, 237, 0.75);
     padding-top: 10px;
     padding-bottom: 10px;}
+
+hr.solid {
+    border-top: 2px solid black;
+}
