@@ -1,5 +1,9 @@
 <html lang="en">
 <head>
+    <!--Import google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -17,16 +21,33 @@
     <!--Nav bar-->
     <nav class="z-depth-0" style="background-color: rgb(240, 240, 237);">
         <div class="container row">
-            <a href="/GeorgiaArt" class="brand=logo col s3">
-                <h5 class="responsive-text hide-on-med-and-down text-type" style="font-weight:600;">Georgia Mackesy</h5>
-                <h6 class="responsive-text hide-on-large-only text-type" style="font-weight: 600;">Georgia Mackesy</h6>
+            <!--for large and med screens-->
+            <a href="/GeorgiaArt" class="brand=logo col s3 hide-on-small-only">
+                <h5 class="responsive-text title-font">Georgia Mackesy</h5>
             </a>
-            <ul id="nav-mobile" class="col s7">
-                <li><a class="text-type responsive-text" href="/GeorgiaArt/Film.html" style="color: black;">Film</a></li>
-                <li><a class="text-type responsive-text" href="/GeorgiaArt/Photography.html" style="color: black;">Photography</a></li>
-                <li><a class="text-type responsive-text" href="/GeorgiaArt/About.html" style="color: black;">About</a></li>
+
+            <!--for mobile-->
+            <a href="/GeorgiaArt" class="brand=logo col s6 hide-on-med-and-up">
+                <h5 class="responsive-text title-font">Georgia Mackesy</h5>
+            </a>
+            <!--sidenav trigger (mobile only)-->
+            <a href="" class="sidenav-trigger hide-on-med-and-up col s3 right" data-target="slide-out"><i class="material-icons" style="color: black;">menu</i></a>
+            <!--for med->large-->
+            <ul id="nav-mobile hide-on-small-only" class="col s7">
+                <li><a class="responsive-text nav-font hide-on-small-only" href="/GeorgiaArt/Film.html">Film</a></li>
+                <li><a class="responsive-text nav-font hide-on-small-only" href="/GeorgiaArt/Photography.html">Photography</a></li>
+                <li><a class="responsive-text nav-font hide-on-small-only" href="/GeorgiaArt/About.html">About</a></li>
+            </ul>
         </div>
     </nav>
+
+    <!--sidenav for mobile-->
+    <ul id="slide-out" class="sidenav">
+        <li><a href="/GeorgiaArt"><h5 class="responsive-text title-font">Georgia Mackesy</h5></a></li>
+        <li><a href="/GeorgiaArt/Film.html"><h5 class="responsive-text title-font">Film</h5></a></li>
+        <li><a href="/GeorgiaArt/Photography.html"><h5 class="responsive-text title-font">Photography</h5></a></li>
+        <li><a href="/GeorgiaArt/About.html"><h5 class="responsive-text title-font">About</h5></a></li>
+    </ul>
 
     <!--Content for wide-->
     <div class="container row Content hide-on-small">
@@ -77,5 +98,17 @@
     <!--Scripts-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+            M.AutoInit();
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems, options);
+            });
+
+            $(document).ready(function(){
+                $('.sidenav').sidenav({edge:'right'});
+            });
+    </script>
 </body>
 </html>
