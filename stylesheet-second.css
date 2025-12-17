@@ -1,0 +1,61 @@
+.title-font {
+    color:white; 
+    font-family:"kochi mincho";
+    }
+
+.text-type {
+    color: white;
+    font-family: "kochi mincho";
+}
+
+.btn-text {
+    color: white;
+    font-family: "kochi mincho";
+    size: 1000px;
+}
+
+body {
+    background-color: black;
+    }
+
+
+hr.solid {
+    border-top: 2px solid white;
+}
+
+.home-btn {
+  border: none;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;}
+
+.nav-btn {
+  border: solid;
+  border-color: white;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;}
+
+.nav-dis {
+  border: solid;
+  border-color: white;
+  background-color: rgb(99, 99, 99);
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;}
+
+.cont-bord {
+    border: solid;
+    border-color: white;
+    padding: 8px;
+}
+
+.content {
+    border: solid;
+    border-color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
