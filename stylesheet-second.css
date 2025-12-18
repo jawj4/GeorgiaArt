@@ -59,3 +59,28 @@ hr.solid {
     padding-top: 20px;
     padding-bottom: 10px;
 }
+
+div.about-grid-large {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+div.about-grid-small {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+div.gallery-grid-large {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1%;
+    row-gap: 1%;
+    padding-bottom: 15%;
+}
+
+div.gallery-grid-small {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 0.5%;
+    padding-bottom: 60%;
+}
