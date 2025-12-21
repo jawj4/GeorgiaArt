@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <!--Import google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="stylesheet-second.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgia Mackesy</title>
+
+</head>
+
+<body>
+    
+    <!--Header-->
+    <div class="container center title-font">
+        <!--large/med home page-->
+        <button class="home-btn hide-on-small-only" onclick="document.location='index'"><h1 class="responsive-text title-font">Georgia Mackesy</h1></button>
+        <!--small home page-->
+        <button class="home-btn hide-on-med-and-up" onclick="document.location='index'"><h2 class="responsive-text title-font">Georgia Mackesy</h2></button>
+
+        <hr class="solid">
+
+            <button class="nav-btn btn-text" onclick="document.location='Film'">Film</button>
+            <button class="nav-btn btn-text nav-dis" onclick="document.location='Events'" disabled>Events</button>
+            <button class="nav-btn btn-text" onclick="document.location='Figure'">Figure</button>
+            <button class="nav-btn btn-text" onclick="document.location='Personal'">Personal</button>
+            <button class="nav-btn btn-text" onclick="document.location='About'">About</button>
+    </div>
+    <br>
+
+    <!--Content-->
+    <div class="container center content">
+        <!--large/med-->
+        <div class="events-grid-large hide-on-small-only">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC00196.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC00268.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC01700.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC03217.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC01835.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC02403.jpg" alt="" class="responsive-img">
+        </div>
+
+        <!--small-->
+        <div class="events-grid-small hide-on-med-and-up">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC00196.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC00268.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC01700.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC03217.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC01835.jpg" alt="" class="responsive-img">
+            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/events/DSC02403.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <br>
+
+    <!--footer-->
+    <div class="container">
+        <hr>
+        <div class="row">
+            <p class="title-font responsive-text col s4">Website and contents is ©Georgia Mackesy</p>
+
+            <div class="container col s4 right row">
+            <a href="https://www.instagram.com/jaw_j4_art/">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/ig_logo_inv.png" alt="instagram" class="responsive-image col s4">
+            </a>
+            <a href="https://youtube.com/@jawjaart?si=7CQPOy8uRguYRqw9">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/yt_logo_inv.png" alt="youtube" class="responsive-image col s4">
+            </a>
+            <a href="https://www.linkedin.com/in/georgia-mackesy-6a338635b/">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/lin_in_logo_inv.png" alt="linkedin" class="responsive-image col s4">
+            </a>
+        </div>
+        </div>
+    </div>
+
+
+    <!--Scripts-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+            M.AutoInit();
+
+            $(document).ready(function(){
+                $('.sidenav').sidenav({edge:'right'});
+            });
+    </script>
+</body>
+</html>
