@@ -84,3 +84,33 @@ div.gallery-grid-small {
     row-gap: 0.5%;
     padding-bottom: 60%;
 }
+
+div.events-grid-large {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1%;
+    row-gap: 1%;
+    padding-bottom: 3%;
+}
+
+div.events-grid-small {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 0.5%;
+    padding-bottom: 15%;
+}
+
+div.figure-grid-large {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1%;
+    row-gap: 1%;
+    padding-bottom: 3%;
+}
+
+div.figure-grid-small {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 0.5%;
+    padding-bottom: 15%;
+}
