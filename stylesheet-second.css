@@ -7,13 +7,12 @@
 
 .text-type {
     color: white;
-    font-family: "kochi mincho";
+    font-family: "IM Fell Great Primer", serif;;
 }
 
 .btn-text {
     color: white;
-    font-family: "kochi mincho";
-    size: 1000px;
+    font-family: "IM Fell Great Primer", serif;;
 }
 
 body {
@@ -114,5 +113,5 @@ div.figure-grid-small {
     display: grid;
     grid-template-columns: auto;
     row-gap: 0.5%;
-    padding-bottom: 15%;
+    padding-bottom: 18%;
 }
