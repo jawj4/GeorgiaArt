@@ -7,12 +7,12 @@
 
 .text-type {
     color: white;
-    font-family: "IM Fell Great Primer", serif;;
+    font-family: "forma-djr-mono", sans-serif;
 }
 
 .btn-text {
     color: white;
-    font-family: "IM Fell Great Primer", serif;;
+    font-family: "forma-djr-mono", sans-serif;
 }
 
 body {
@@ -114,4 +114,14 @@ div.figure-grid-small {
     grid-template-columns: auto;
     row-gap: 0.5%;
     padding-bottom: 18%;
+}
+
+div.film-stills-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 2.5%;
+    column-gap: 1.5%;
+    padding-bottom: 0;
+    padding-left: 10%;
+    padding-right: 10%;
 }
