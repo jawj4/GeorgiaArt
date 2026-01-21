@@ -14,6 +14,7 @@
             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
     </script>
+    <script src="random_image.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -26,7 +27,7 @@
 
 </head>
 
-<body>
+<body onload="setRandomPics()">
     
     <!--Header-->
     <div class="container center title-font">
@@ -49,12 +50,12 @@
     <!--Content-->
     <div class="container center content">
         <div class="row">
-            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/DSC04960.jpg" alt="" class="responsive-img col s6">
-            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/DSC02620.jpg" alt="" class="responsive-img col s6">
+            <img id="wide1" alt="" class="responsive-img col s6">
+            <img id="wide2" alt="" class="responsive-img col s6">
         </div>
         <div class="row">
-            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/DSC00490.jpg" alt="" class="responsive-img col s6">
-            <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/IMG_4733.jpg" alt="" class="responsive-img col s6">
+            <img id="wide3" alt="" class="responsive-img col s6">
+            <img id="wide4" alt="" class="responsive-img col s6">
         </div>
     </div>
 
