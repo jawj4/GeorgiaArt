@@ -3,13 +3,23 @@
     <!--Import google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'sla7vwu',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+    <script src="random_image.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet-second.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,58 +27,90 @@
 
 </head>
 
-<body style="background-color: rgb(240, 240, 237);">
+<body onload="setRandomPics()">
     
-    <!--Nav bar-->
-    <nav class="z-depth-0" style="background-color: rgb(240, 240, 237);">
-        <div class="container row">
-            <!--for large and med screens-->
-            <a href="/GeorgiaArt" class="brand=logo col s3 hide-on-small-only">
-                <h5 class="responsive-text title-font">Georgia Mackesy</h5>
-            </a>
+    <!--Header-->
+    <div class="container center title-font">
+        <!--large/med home page-->
+        <button class="home-btn hide-on-small-only" onclick="document.location='index'"><h1 class="responsive-text title-font">Georgia Mackesy</h1></button>
+        <!--small home page-->
+        <button class="home-btn hide-on-med-and-up" onclick="document.location='index'"><h3 class="responsive-text title-font">Georgia Mackesy</h3></button>
 
-            <!--for mobile-->
-            <a href="/GeorgiaArt" class="brand=logo col s9 hide-on-med-and-up">
-                <h6 class="responsive-text title-font">Georgia Mackesy</h6>
-            </a>
-            <!--sidenav trigger (mobile only)-->
-            <a href="" class="sidenav-trigger hide-on-med-and-up col s2 right" data-target="slide-out"><i class="material-icons" style="color: black;">menu</i></a>
-            <!--for med->large-->
-            <ul id="nav-mobile hide-on-small-only" class="col s7">
-                <li><a class="responsive-text nav-font hide-on-small-only" href="/GeorgiaArt/Film.html">Film</a></li>
-                <li><a class="responsive-text nav-font hide-on-small-only" href="/GeorgiaArt/Photography.html">Photography</a></li>
-                <li><a class="responsive-text nav-font hide-on-small-only" href="/GeorgiaArt/About.html">About</a></li>
-            </ul>
+        <hr class="solid">
+
+            <button class="nav-btn btn-text" onclick="document.location='Film'">Film</button>
+            <button class="nav-btn btn-text" onclick="document.location='Events'">Events</button>
+            <button class="nav-btn btn-text" onclick="document.location='Figure'">Figure</button>
+            <button class="nav-btn btn-text" onclick="document.location='Personal'">Personal</button>
+            <button class="nav-btn btn-text" onclick="document.location='About'">About</button>
+    </div>
+
+    <br>
+
+    <!--Content-->
+    <div class="container center content">
+        <div class="row">
+            <img id="wide1" alt="" class="responsive-img col s6">
+            <img id="wide2" alt="" class="responsive-img col s6">
         </div>
-    </nav>
+        <div class="row">
+            <img id="wide3" alt="" class="responsive-img col s6">
+            <img id="wide4" alt="" class="responsive-img col s6">
+        </div>
+    </div>
 
-    <!--sidenav for mobile-->
-    <ul id="slide-out" class="sidenav">
-        <li><a href="/GeorgiaArt"><h5 class="responsive-text title-font">Georgia Mackesy</h5></a></li>
-        <li><a href="/GeorgiaArt/Film.html"><h5 class="responsive-text title-font">Film</h5></a></li>
-        <li><a href="/GeorgiaArt/Photography.html"><h5 class="responsive-text title-font">Photography</h5></a></li>
-        <li><a href="/GeorgiaArt/About.html"><h5 class="responsive-text title-font">About</h5></a></li>
-    </ul>
+    <br>
 
-    <img class="responsive-img hide-on-small-only" src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/DSC00445_thumb.jpg" alt="">
-    <img class="responsive-img hide-on-med-and-up" src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/DSC00196.jpg" alt="">
-    
+    <!--footer-->
+    <div class="container">
+        <hr>
+        <!--big footer-->
+        <div class="row hide-on-med-and-down">
+            <p class="text-type responsive-text col s4">Website and contents is ©Georgia Mackesy</p>
 
-    <!--FOOTER-->
-    <div class="row content" style="padding-top: 10px;">
-        <p class="col s6 center responsive-text text-type">
-            Website and content creation of Georgia Mackesy
-        </p>
-        <div class="container col s4 right">
+            <div class="container col s3 right row">
             <a href="https://www.instagram.com/jaw_j4_art/">
-                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/instagram_logo.png" alt="instagram logo" class="responsive-image col s2">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/ig_logo_inv.png" alt="instagram" class="responsive-image col s4">
             </a>
             <a href="https://youtube.com/@jawjaart?si=7CQPOy8uRguYRqw9">
-                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/youtube_logo.png" alt="youtube logo" class="responsive-image col s2">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/yt_logo_inv.png" alt="youtube" class="responsive-image col s4">
             </a>
             <a href="https://www.linkedin.com/in/georgia-mackesy-6a338635b/">
-                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/linked_in_logo.png" alt="linkedin logo" class="responsive-image col s2">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/lin_in_logo_inv.png" alt="linkedin" class="responsive-image col s4">
             </a>
+            </div>
+        </div>
+        <!--med footer-->
+        <div class="row hide-on-small-only hide-on-large-only">
+            <p class="text-type responsive-text col s4">Website and contents is ©Georgia Mackesy</p>
+
+            <div class="container col s4 right row">
+            <a href="https://www.instagram.com/jaw_j4_art/">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/ig_logo_inv.png" alt="instagram" class="responsive-image col s4">
+            </a>
+            <a href="https://youtube.com/@jawjaart?si=7CQPOy8uRguYRqw9">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/yt_logo_inv.png" alt="youtube" class="responsive-image col s4">
+            </a>
+            <a href="https://www.linkedin.com/in/georgia-mackesy-6a338635b/">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/lin_in_logo_inv.png" alt="linkedin" class="responsive-image col s4">
+            </a>
+            </div>
+        </div>
+        <!--small footer-->
+        <div class="row hide-on-med-and-up">
+            <p class="text-type responsive-text col s4">Website and contents is ©Georgia Mackesy</p>
+
+            <div class="container col s6 right row">
+            <a href="https://www.instagram.com/jaw_j4_art/">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/ig_logo_inv.png" alt="instagram" class="responsive-image col s4">
+            </a>
+            <a href="https://youtube.com/@jawjaart?si=7CQPOy8uRguYRqw9">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/yt_logo_inv.png" alt="youtube" class="responsive-image col s4">
+            </a>
+            <a href="https://www.linkedin.com/in/georgia-mackesy-6a338635b/">
+                <img src="https://file.garden/aOtmp_Be6gwrFnBa/website%20resources/lin_in_logo_inv.png" alt="linkedin" class="responsive-image col s4">
+            </a>
+            </div>
         </div>
     </div>
 
@@ -79,15 +121,9 @@
     <script>
             M.AutoInit();
 
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems, options);
-            });
-
             $(document).ready(function(){
                 $('.sidenav').sidenav({edge:'right'});
             });
     </script>
 </body>
 </html>
-
