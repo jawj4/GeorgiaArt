@@ -91,14 +91,14 @@ div.events-grid-large {
     grid-template-columns: auto auto;
     column-gap: 1%;
     row-gap: 1%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 div.events-grid-small {
     display: grid;
     grid-template-columns: auto;
     row-gap: 0.5%;
-    padding-bottom: 23%;
+    padding-bottom: 43%;
 }
 
 div.figure-grid-large {
@@ -106,14 +106,14 @@ div.figure-grid-large {
     grid-template-columns: auto auto;
     column-gap: 1%;
     row-gap: 1%;
-    padding-bottom: 3%;
+    padding-bottom: 8%;
 }
 
 div.figure-grid-small {
     display: grid;
     grid-template-columns: auto;
     row-gap: 0.5%;
-    padding-bottom: 18%;
+    padding-bottom: 25%;
 }
 
 div.film-stills-grid {
