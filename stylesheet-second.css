@@ -5,6 +5,12 @@
     font-style: italic;
     }
 
+.sub-font {
+    color: white;
+    font-family: "redaction-35", sans-serif;
+    font-style: italic;
+}
+
 .text-type {
     color: white;
     font-family: "forma-djr-mono", sans-serif;
@@ -113,7 +119,7 @@ hr.solid {
 
 div.about-grid-large {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 58% 40%;
     column-gap: 2%;
     padding-left: 1%;
     padding-right: 1%;
