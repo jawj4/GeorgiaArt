@@ -149,14 +149,14 @@ div.events-grid-large {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 1%;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
 }
 
 div.events-grid-small {
     display: grid;
     grid-template-columns: auto;
     row-gap: 0.5%;
-    padding-bottom: 43%;
+    padding-bottom: 55%;
 }
 
 div.figure-grid-large {
